@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pages</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240504214958">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+				<div data-da=".menu__body, 768" class="header__social-block social-block">
+					<a href="#" class="social-block__item-social item-social">
+						<svg class="social-block__item-social-svg item-social-svg">
+							<use xlink:href="img/icons/icons.svg#facebook"></use>
+						</svg>
+					</a>
+					<a href="#" class="social-block__item-social item-social">
+						<svg class="social-block__item-social-svg item-social-svg">
+							<use xlink:href="img/icons/icons.svg#tvit"></use>
+						</svg>
+					</a>
+					<a href="#" class="social-block__item-social item-social">
+						<svg class="social-block__item-social-svg item-social-svg">
+							<use xlink:href="img/icons/icons.svg#in"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li data-goto-header data-goto=".author-book" class="menu__item"><a href="" class="menu__link">books</a></li>
+							<li data-goto-header data-goto=".about-author" class="menu__item"><a href="" class="menu__link">author</a></li>
+							<li data-goto-header data-goto=".knowledge" class="menu__item"><a href="" class="menu__link">chapters</a></li>
+							<li data-goto-header data-goto=".articles-and-resources" class="menu__item"><a href="" class="menu__link">articles</a></li>
+						</ul>
+					</nav>
+				</div>
+				<button data-popup="#popup" type="button" class="header__basket">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#basket"></use>
+					</svg>
+				</button>
+				<button data-popup="#popup" type="button" class="header__button button button--fill" href="#">order today</button>
+			</div>
+		</header>
+
+		<li class="menu__item"><a href="" class="menu__link">author</a></li>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<!-- <button data-close type="button" class="popup__close">x</button> -->
+					<div class="popup__body">
+
+						<form class="form">
+							<p class="form-title">we will call you back</p>
+							<div class="input-container">
+								<input type="tel" placeholder="Your phone number">
+
+							</div>
+							<button type="submit" class="submit">
+								Send
+							</button>
+						</form>
+
+						<!-- <div class="modal">
+					<form class="form">
+						<div class="payment--options">
+							<button name="apple-pay" type="button">
+								<svg xml:space="preserve" viewBox="0 0 512 210.2" y="0px" x="0px" id="Layer_1" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+									<path d="M93.6,27.1C87.6,34.2,78,39.8,68.4,39c-1.2-9.6,3.5-19.8,9-26.1c6-7.3,16.5-12.5,25-12.9  C103.4,10,99.5,19.8,93.6,27.1 M102.3,40.9c-13.9-0.8-25.8,7.9-32.4,7.9c-6.7,0-16.8-7.5-27.8-7.3c-14.3,0.2-27.6,8.3-34.9,21.2  c-15,25.8-3.9,64,10.6,85c7.1,10.4,15.6,21.8,26.8,21.4c10.6-0.4,14.8-6.9,27.6-6.9c12.9,0,16.6,6.9,27.8,6.7  c11.6-0.2,18.9-10.4,26-20.8c8.1-11.8,11.4-23.3,11.6-23.9c-0.2-0.2-22.4-8.7-22.6-34.3c-0.2-21.4,17.5-31.6,18.3-32.2  C123.3,42.9,107.7,41.3,102.3,40.9 M182.6,11.9v155.9h24.2v-53.3h33.5c30.6,0,52.1-21,52.1-51.4c0-30.4-21.1-51.2-51.3-51.2H182.6z   M206.8,32.3h27.9c21,0,33,11.2,33,30.9c0,19.7-12,31-33.1,31h-27.8V32.3z M336.6,169c15.2,0,29.3-7.7,35.7-19.9h0.5v18.7h22.4V90.2  c0-22.5-18-37-45.7-37c-25.7,0-44.7,14.7-45.4,34.9h21.8c1.8-9.6,10.7-15.9,22.9-15.9c14.8,0,23.1,6.9,23.1,19.6v8.6l-30.2,1.8  c-28.1,1.7-43.3,13.2-43.3,33.2C298.4,155.6,314.1,169,336.6,169z M343.1,150.5c-12.9,0-21.1-6.2-21.1-15.7c0-9.8,7.9-15.5,23-16.4  l26.9-1.7v8.8C371.9,140.1,359.5,150.5,343.1,150.5z M425.1,210.2c23.6,0,34.7-9,44.4-36.3L512,54.7h-24.6l-28.5,92.1h-0.5  l-28.5-92.1h-25.3l41,113.5l-2.2,6.9c-3.7,11.7-9.7,16.2-20.4,16.2c-1.9,0-5.6-0.2-7.1-0.4v18.7C417.3,210,423.3,210.2,425.1,210.2z" id="XMLID_34_"></path>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg>
+							</button>
+							<button name="google-pay" type="button">
+								<svg fill="none" viewBox="0 0 80 39" height="39" width="80" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_134_34)">
+										<path fill="#5F6368" d="M37.8 19.7V29H34.8V6H42.6C44.5 6 46.3001 6.7 47.7001 8C49.1001 9.2 49.8 11 49.8 12.9C49.8 14.8 49.1001 16.5 47.7001 17.8C46.3001 19.1 44.6 19.8 42.6 19.8L37.8 19.7ZM37.8 8.8V16.8H42.8C43.9 16.8 45.0001 16.4 45.7001 15.6C47.3001 14.1 47.3 11.6 45.8 10.1L45.7001 10C44.9001 9.2 43.9 8.7 42.8 8.8H37.8Z"></path>
+										<path fill="#5F6368" d="M56.7001 12.8C58.9001 12.8 60.6001 13.4 61.9001 14.6C63.2001 15.8 63.8 17.4 63.8 19.4V29H61V26.8H60.9001C59.7001 28.6 58 29.5 56 29.5C54.3 29.5 52.8 29 51.6 28C50.5 27 49.8 25.6 49.8 24.1C49.8 22.5 50.4 21.2 51.6 20.2C52.8 19.2 54.5 18.8 56.5 18.8C58.3 18.8 59.7 19.1 60.8 19.8V19.1C60.8 18.1 60.4 17.1 59.6 16.5C58.8 15.8 57.8001 15.4 56.7001 15.4C55.0001 15.4 53.7 16.1 52.8 17.5L50.2001 15.9C51.8001 13.8 53.9001 12.8 56.7001 12.8ZM52.9001 24.2C52.9001 25 53.3001 25.7 53.9001 26.1C54.6001 26.6 55.4001 26.9 56.2001 26.9C57.4001 26.9 58.6 26.4 59.5 25.5C60.5 24.6 61 23.5 61 22.3C60.1 21.6 58.8 21.2 57.1 21.2C55.9 21.2 54.9 21.5 54.1 22.1C53.3 22.6 52.9001 23.3 52.9001 24.2Z"></path>
+										<path fill="#5F6368" d="M80 13.3L70.1 36H67.1L70.8 28.1L64.3 13.4H67.5L72.2 24.7H72.3L76.9 13.4H80V13.3Z"></path>
+										<path fill="#4285F4" d="M25.9 17.7C25.9 16.8 25.8 15.9 25.7 15H13.2V20.1H20.3C20 21.7 19.1 23.2 17.7 24.1V27.4H22C24.5 25.1 25.9 21.7 25.9 17.7Z"></path>
+										<path fill="#34A853" d="M13.1999 30.5999C16.7999 30.5999 19.7999 29.3999 21.9999 27.3999L17.6999 24.0999C16.4999 24.8999 14.9999 25.3999 13.1999 25.3999C9.7999 25.3999 6.7999 23.0999 5.7999 19.8999H1.3999V23.2999C3.6999 27.7999 8.1999 30.5999 13.1999 30.5999Z"></path>
+										<path fill="#FBBC04" d="M5.8001 19.8999C5.2001 18.2999 5.2001 16.4999 5.8001 14.7999V11.3999H1.4001C-0.499902 15.0999 -0.499902 19.4999 1.4001 23.2999L5.8001 19.8999Z"></path>
+										<path fill="#EA4335" d="M13.2 9.39996C15.1 9.39996 16.9 10.1 18.3 11.4L22.1 7.59996C19.7 5.39996 16.5 4.09996 13.3 4.19996C8.3 4.19996 3.7 6.99996 1.5 11.5L5.9 14.9C6.8 11.7 9.8 9.39996 13.2 9.39996Z"></path>
+									</g>
+									<defs>
+										<clipPath id="clip0_134_34">
+											<rect fill="white" height="38.1" width="80"></rect>
+										</clipPath>
+									</defs>
+								</svg>
+							</button>
+						</div>
+						<div class="separator">
+							<hr class="line">
+							<p>or pay using credit card</p>
+							<hr class="line">
+						</div>
+						<div class="credit-card-info--form">
+							<div class="input_container">
+								<label for="password_field" class="input_label">Card holder full name</label>
+								<input id="password_field" class="input_field" type="text" name="input-name" title="Inpit title" placeholder="Enter your full name">
+							</div>
+							<div class="input_container">
+								<label for="password_field" class="input_label">Card Number</label>
+								<input id="password_field" class="input_field" type="number" name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000">
+							</div>
+							<div class="input_container">
+								<label for="password_field" class="input_label">Expiry Date / CVV</label>
+								<div class="split">
+									<input id="password_field" class="input_field" type="text" name="input-name" title="Expiry Date" placeholder="01/23">
+									<input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV">
+								</div>
+							</div>
+						</div>
+						<button class="purchase--btn">Checkout</button>
+					</form>
+				</div> -->
+					</div>
+				</div>
+			</div>
+		</div>gh
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__content-hero content-hero">
+						<h2 class="content-hero__sub-title">Welcome to Pages!!!</h2>
+						<h1 class="content-hero__title">Your Books From The Best Writer.</h1>
+						<p class="content-hero__text">We believe that reading books are essential to a healthy culture.
+							They’re where authors can connect with readers.
+						</p>
+						<div class="content-hero__demo-block">
+							<a data-popup="#popup" class="content-hero__button button button--fill" href="#">order today</a>
+							<a href="#" class="content-hero__demo-link">Read Free Demo</a>
+						</div>
+						<div class="content-hero__list-block">
+							<ul class="content-hero__list">
+								<h3>pages:</h3>
+								<li>250 pages</li>
+							</ul>
+							<ul class="content-hero__list">
+								<h3>length:</h3>
+								<li>10 Hours</li>
+							</ul>
+							<ul class="content-hero__list">
+								<h3>rating:</h3>
+								<li>4.5/5</li>
+							</ul>
+						</div>
+					</div>
+					<picture><source srcset="img/book/book-02.webp" type="image/webp"><img class="hero__image ibg" src="img/book/book-02.jpg" alt="Image"></picture>
+				</div>
+			</section>
+			<section class="author-book">
+				<div class="author-book__container">
+					<div class="author-book__title-block title-block">
+						<h2 class="title-block__title">The Author’s Book</h2>
+						<span class="title-block__line"></span>
+					</div>
+					<div class="author-book__content-author-book content-author-book">
+						<div class="content-author-book__card-book card-book">
+							<div class="card-book__image">
+								<picture><source srcset="img/book/book-02.webp" type="image/webp"><img class="card-book__image-item ibg" src="img/book/book-02.jpg" alt="Image"></picture>
+							</div>
+							<div class="card-book__content">
+								<h4 class="card-book__title">The Dark Light</h4>
+								<span class="card-book__price">$ 86.11 USD</span>
+								<p class="card-book__description">As the book contains theoretical content as well as solved questions.</p>
+								<span class="card-book__printed">Printed Book</span>
+								<a data-popup="#popup" class="card-book__button button" href="#">order now</a>
+							</div>
+						</div>
+						<div class="content-author-book__card-book card-book">
+							<div class="card-book__image">
+								<picture><source srcset="img/book/book-01.webp" type="image/webp"><img class="card-book__image-item ibg" src="img/book/book-01.jpg" alt="Image"></picture>
+							</div>
+							<div class="card-book__content">
+								<h4 class="card-book__title">Atomic One’s</h4>
+								<span class="card-book__price">$ 13.84 USD</span>
+								<p class="card-book__description">As the book contains theoretical content as well as solved questions.</p>
+								<span class="card-book__printed">Printed Book</span>
+								<a data-popup="#popup" class="card-book__button button" href="#">order now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about-author">
+				<div class="about-author__container">
+					<div class="about-author__image"><picture><source srcset="img/author/author.webp" type="image/webp"><img class="about-author__image-item ibg" src="img/author/author.jpg" alt="Image"></picture></div>
+					<div class="about-author__content-block">
+						<div class="about-author__title-block title-block">
+							<h2 class="title-block__title">About the Author</h2>
+							<span class="title-block__line"></span>
+						</div>
+						<p>We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, where we discover new writers, where children get hooked on the thrill of reading that can last a lifetime.</p>
+						<ul class="about-author__rating">
+							<li>
+								02
+								<span>Books Published</span>
+							</li>
+							<li>
+								4.5
+								<span>User Reviews</span>
+							</li>
+							<li>
+								04
+								<span>Best Seller Awards</span>
+							</li>
+						</ul>
+
+						<div class="about-author__contacts-author contacts-author">
+							<picture><source srcset="img/author/qr-code.webp" type="image/webp"><img class="contacts-author__image ibg" src="img/author/qr-code.jpg" alt="Image"></picture>
+							<div class="contacts-author__text-block">
+								<h4>John Abraham , Ph.d</h4>
+								<div class="contacts-author__maill">
+									<span>Mail:</span>
+									<a href="mailto:johnabraham@gmail.com">johnabraham@gmail.com</a>
+								</div>
+								<div class="contacts-author__call">
+									<span>Phone:</span>
+									<a href="tel:+221234567900">(+2) 123 545 9000</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="trusted">
+				<div class="trusted__container">
+					<div class="trusted__title-block title-block">
+						<h2 class="title-block__title">Trusted By The Best</h2>
+						<span class="title-block__line"></span>
+					</div>
+					<div class="trusted__cards-block cards-block">
+						<div class="cards-block__card">
+							<picture><source srcset="img/trusted/01.webp" type="image/webp"><img src="img/trusted/01.jpg" alt="image"></picture>
+							<h5>Amazen Corp.</h5>
+							<p>They has been helping readers, music lovers, and videophiles find quality material.</p>
+						</div>
+						<div class="cards-block__card">
+							<picture><source srcset="img/trusted/02.webp" type="image/webp"><img src="img/trusted/02.jpg" alt="image"></picture>
+							<h5>Megan Books</h5>
+							<p>We help physical bookstores manage their overstock to the book inventory.</p>
+						</div>
+						<div class="cards-block__card">
+							<picture><source srcset="img/trusted/03.webp" type="image/webp"><img src="img/trusted/03.jpg" alt="image"></picture>
+							<h5>Megank</h5>
+							<p>Bookstore serving up the full spectrum of Black literature and wine black books.</p>
+						</div>
+						<div class="cards-block__card">
+							<picture><source srcset="img/trusted/04.webp" type="image/webp"><img src="img/trusted/04.jpg" alt="image"></picture>
+							<h5>Urban Store</h5>
+							<p>We also carry the latest records, issues of all of your favorite comic books.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="decor-section">
+				<div class="decor-section__container">
+					<div class="decor-section__body-decor-section body-decor-section">
+						<div class="body-decor-section__title-block title-block">
+							<h2 class="title-block__title">Get Book Copy Today!</h2>
+							<span class="title-block__line"></span>
+						</div>
+						<p>We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers.</p>
+						<a data-popup="#popup" class="decor-section__button button" href="#">order today</a>
+					</div>
+					<picture><source srcset="img/image-decor.webp" type="image/webp"><img class="decor-section__image ibg" src="img/image-decor.png" alt="Image"></picture>
+				</div>
+			</section>
+			<section class="will-learn">
+				<div class="will-learn__container">
+					<div class="will-learn__title-block title-block">
+						<h2 class="title-block__title">What Will You Learn?</h2>
+						<span class="title-block__line"></span>
+					</div>
+
+					<div class="will-learn__body">
+						<div class="will-learn__content-will-learn content-will-learn">
+							<div class="content-will-learn__item">
+								<span>01</span>
+								<p>Use HDFS & Map Reduce for storing & analyzing data at scale.</p>
+							</div>
+							<div class="content-will-learn__item">
+								<span>02</span>
+								<p>Consume streaming data using Spark Streaming, Flink, and Storm.</p>
+							</div>
+							<div class="content-will-learn__item">
+								<span>03</span>
+								<p>Choose an appropriate data storage technology for your application</p>
+							</div>
+							<div class="content-will-learn__item">
+								<span>04</span>
+								<p>Analyze non-relational data using HBase, Cassandra, and MongoDB.</p>
+							</div>
+						</div>
+						<div class="will-learn__image"><picture><source srcset="img/author/author-2.webp" type="image/webp"><img class="will-learn__image-item ibg" src="img/author/author-2.jpg" alt="Image"></picture></div>
+					</div>
+
+				</div>
+			</section>
+			<section class="knowledge">
+				<div class="knowledge__container">
+					<div class="knowledge__title-block title-block">
+						<h2 class="title-block__title">Enhance knowledge & Vision</h2>
+						<span class="title-block__line"></span>
+					</div>
+					<div class="knowledge__content-knowledge content-knowledge">
+						<!--  -->
+						<div class="content-knowledge__card-knowledge card-knowledge">
+							<h4>Chapter-1 Get Started Intro</h4>
+							<p>You can double your knowledge by reading this ever needed book that can last a lifetime.</p>
+							<ul class="card-knowledge__info">
+								<li>
+									<h5>Pages :</h5>
+									<span>106pages</span>
+								</li>
+								<li>
+									<h5>Length :</h5>
+									<span>2 Hours</span>
+								</li>
+							</ul>
+						</div>
+						<!--  -->
+						<div class="content-knowledge__card-knowledge card-knowledge">
+							<h4>Chapter-1 Get Started Intro</h4>
+							<p>You can double your knowledge by reading this ever needed book that can last a lifetime.</p>
+							<ul class="card-knowledge__info">
+								<li>
+									<h5>Pages :</h5>
+									<span>106pages</span>
+								</li>
+								<li>
+									<h5>Length :</h5>
+									<span>2 Hours</span>
+								</li>
+							</ul>
+						</div>
+						<!--  -->
+						<div class="content-knowledge__card-knowledge card-knowledge">
+							<h4>Chapter-1 Get Started Intro</h4>
+							<p>You can double your knowledge by reading this ever needed book that can last a lifetime.</p>
+							<ul class="card-knowledge__info">
+								<li>
+									<h5>Pages :</h5>
+									<span>106pages</span>
+								</li>
+								<li>
+									<h5>Length :</h5>
+									<span>2 Hours</span>
+								</li>
+							</ul>
+						</div>
+						<!--  -->
+						<div class="content-knowledge__card-knowledge card-knowledge">
+							<h4>Chapter-1 Get Started Intro</h4>
+							<p>You can double your knowledge by reading this ever needed book that can last a lifetime.</p>
+							<ul class="card-knowledge__info">
+								<li>
+									<h5>Pages :</h5>
+									<span>106pages</span>
+								</li>
+								<li>
+									<h5>Length :</h5>
+									<span>2 Hours</span>
+								</li>
+							</ul>
+						</div>
+						<!--  -->
+					</div>
+					<div class="knowledge__trail-block">
+						<a class="knowledge__button button button--fill" href="#">Start a 15-Days Free Trail</a>
+						<p>Short description about each chapter <br> <a href="#">Have any questions?</a> Contact us</p>
+					</div>
+				</div>
+			</section>
+			<section class="our-readers">
+				<div class="our-readers__container">
+					<div class="our-readers__text-block">
+						<div class="our-readers__title-block title-block">
+							<h2 class="title-block__title">Words From Our Readers</h2>
+							<span class="title-block__line"></span>
+						</div>
+						<p>We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, where we discover new writers, where children get hooked on the thrill of reading that can last a lifetime.</p>
+						<div class="rating">
+							<input type="radio" id="star5" name="rate" value="5" />
+							<label for="star5" title="text"></label>
+							<input type="radio" id="star4" name="rate" value="4" />
+							<label for="star4" title="text"></label>
+							<input type="radio" id="star3" name="rate" value="3" />
+							<label for="star3" title="text"></label>
+							<input type="radio" id="star2" name="rate" value="2" />
+							<label for="star2" title="text"></label>
+							<input checked="" type="radio" id="star1" name="rate" value="1" />
+							<label for="star1" title="text"></label>
+						</div>
+						<span>Overall Customer Ratings</span>
+					</div>
+					<div class="our-readers__review-block review-block-our-readers">
+
+						<div class="review-block-our-readers__item-review item-review">
+							<div class="item-review__info-user info-user">
+								<picture><source srcset="img/photo/photo-02.webp" type="image/webp"><img src="img/photo/photo-02.jpg" alt=""></picture>
+								<div class="info-user__user">
+									<span class="info-user__name">James Williams</span>
+								</div>
+							</div>
+							<span class="item-review__title">Great Books Collections</span>
+							<p>I was searching this book for many years and I was happy that I could find it here.</p>
+						</div>
+
+						<div class="review-block-our-readers__item-review item-review">
+							<div class="item-review__info-user info-user">
+								<picture><source srcset="img/photo/photo-03.webp" type="image/webp"><img src="img/photo/photo-03.jpg" alt=""></picture>
+								<div class="info-user__user">
+									<span class="info-user__name">Angeline Flora</span>
+								</div>
+							</div>
+							<span class="item-review__title">Creative Writing Skill</span>
+							<p>I was searching this book for many years and I was happy that I could find it here.</p>
+						</div>
+
+						<div class="review-block-our-readers__item-review item-review">
+							<div class="item-review__info-user info-user">
+								<picture><source srcset="img/photo/photo-01.webp" type="image/webp"><img src="img/photo/photo-01.jpg" alt=""></picture>
+								<div class="info-user__user">
+									<span class="info-user__name">Chris Adams</span>
+								</div>
+							</div>
+							<span class="item-review__title">Perfect Response Author</span>
+							<p>I was searching this book for many years and I was happy that I could find it here.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="articles-and-resources">
+				<div class="articles-and-resources__container">
+					<div class="articles-and-resources__title-block title-block">
+						<h2 class="title-block__title">Articles & Resources</h2>
+						<span class="title-block__line"></span>
+					</div>
+					<div class="articles-and-resources__cards-body cards-body">
+						<div class="cards-body__card card">
+							<div class="card__image">
+								<picture><source srcset="img/articles/articles-03.webp" type="image/webp"><img src="img/articles/articles-03.jpg" alt=""></picture>
+							</div>
+							<div class="card__content">
+								<h4>Significant reading has more info number</h4>
+								<p>Override the digital divide with additional clickthroughs from DevOps for real-time schemas.</p>
+								<div class="card__info-line">
+									<a href="#">Read more</a>
+									<span>October 6, 2021</span>
+								</div>
+							</div>
+						</div>
+						<div class="cards-body__card card">
+							<div class="card__image">
+								<picture><source srcset="img/articles/articles-01.webp" type="image/webp"><img src="img/articles/articles-01.jpg" alt=""></picture>
+							</div>
+							<div class="card__content">
+								<h4>Many variations of pass majority have suffered</h4>
+								<p>Capitalize on low-hanging fruit to identify a ballpark value-added activity to beta test.</p>
+								<div class="card__info-line">
+									<a href="#">Read more</a>
+									<span>October 6, 2021</span>
+								</div>
+							</div>
+						</div>
+						<div class="cards-body__card card">
+							<div class="card__image">
+								<picture><source srcset="img/articles/articles-02.webp" type="image/webp"><img src="img/articles/articles-02.jpg" alt=""></picture>
+							</div>
+							<div class="card__content">
+								<h4>Words which don’t look even slightly believable</h4>
+								<p>Podcasting operational change management inside of workflows to establish a framework.</p>
+								<div class="card__info-line">
+									<a href="#">Read more</a>
+									<span>October 6, 2021</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__title-block title-block">
+						<h2 class="title-block__title">Get The Best Updates</h2>
+						<span class="title-block__line"></span>
+					</div>
+					<p>Subscribe with your mail id to know the current update in book edition at your fingertip with in a minute.</p>
+					<form action="files/sendmail/sendmail.php" method="POST">
+						<input type="email" name="form[email]" data-error="Error" placeholder="Your Email ID..." class="input">
+						<button type="submit" class="form-button">subscribe</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__left-side">
+					<a href="" class="footer__logo"><img src="img/logo.svg" alt="logo"></a>
+					<div class="footer__social-block social-block">
+						<a href="#" class="social-block__item-social item-social item-social--border-with">
+							<svg class="social-block__item-social-svg item-social-svg item-social-svg--white">
+								<use xlink:href="img/icons/icons.svg#facebook"></use>
+							</svg>
+						</a>
+						<a href="#" class="social-block__item-social item-social item-social--border-with">
+							<svg class="social-block__item-social-svg item-social-svg item-social-svg--white">
+								<use xlink:href="img/icons/icons.svg#tvit"></use>
+							</svg>
+						</a>
+						<a href="#" class="social-block__item-social item-social item-social--border-with">
+							<svg class="social-block__item-social-svg item-social-svg item-social-svg--white">
+								<use xlink:href="img/icons/icons.svg#in"></use>
+							</svg>
+						</a>
+						<a href="#" class="social-block__item-social item-social item-social--border-with">
+							<svg class="social-block__item-social-svg item-social-svg item-social-svg--white">
+								<use xlink:href="img/icons/icons.svg#instagram"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__center-side">
+					<div class="footer__list-side">
+						<h3>Explore</h3>
+						<ul>
+							<li><a href="#">home</a></li>
+							<li><a href="#">about</a></li>
+							<li><a href="#">articles</a></li>
+							<li><a href="#">our store</a></li>
+							<li><a href="#">contact us</a></li>
+						</ul>
+					</div>
+					<div class="footer__list-side">
+						<h3>Utility Pages</h3>
+						<ul>
+							<li><a href="#">Style Guide</a></li>
+							<li><a href="#">404 Not Found</a></li>
+							<li><a href="#">Password Protected</a></li>
+							<li><a href="#">Licenses</a></li>
+							<li><a href="#">Changelog</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="footer__right-side">
+					<div class="footer__list-side-touch">
+						<h3>keep in touch</h3>
+						<ul>
+
+							<li>
+								<h4>adress:</h4>
+								<a href="#">24A Kingston St, Los Vegas NC 28202, USA.</a>
+							</li>
+							<li>
+								<h4>mail:</h4>
+								<a href="mailto:support@pages.com">support@pages.com</a>
+							</li>
+							<li>
+								<h4>phone:</h4>
+								<a href="tel:+221234567900">(+00) 123 - 4567 - 890</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__drafted">© Powered by <span>LapkiCom</span>.</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240504214958"></script>
+</body>
+
+</html>
