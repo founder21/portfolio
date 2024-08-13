@@ -464,7 +464,7 @@ body {
   opacity: 1;
   -webkit-transform: translate(0,0);
   transform: translate(0,0);
-  transition: all 1.3s .7s
+  transition: all 1.3s .5s
 }
 .focused__picture--first img {
   aspect-ratio: 321/385;
@@ -482,7 +482,7 @@ body {
   opacity: 1;
   -webkit-transform: translate(0,30%);
   transform: translate(0,30%);
-  transition: all 1.2s 1.3s
+  transition: all 1s .5s
 }
 .focused__picture--second img {
   aspect-ratio: 365/530;
@@ -914,7 +914,7 @@ body {
   opacity: 1;
   -webkit-transform: translate(50%,6.25rem);
   transform: translate(50%,6.25rem);
-  transition: all 1s 1.6s
+  transition: all 1s 1.3s
 }
 .decor-love-block__circle-img img {
   max-width: 100%;
@@ -1396,7 +1396,7 @@ body {
     opacity: 1;
     -webkit-transform: translate(0,0);
     transform: translate(0,0);
-    transition: all 1s 1.6s
+    transition: all 1s 1.3s
   }
   .decor-love-block__rose-img {
     margin: .625rem
