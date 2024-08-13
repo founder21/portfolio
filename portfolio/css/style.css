@@ -71,7 +71,7 @@ h6 {
 body {
   background-image: url(../img/bg.webp);
   background-size: cover;
-  background-color: #0b0e17
+  transition: all .3s ease 0s
 }
 .lock body {
   overflow: hidden;
@@ -258,7 +258,6 @@ body::after {
   font-size: .875rem
 }
 .title-section h2 {
-  color: #fff;
   text-transform: capitalize;
   font-family: "Lakki Reddy"
 }
@@ -348,6 +347,39 @@ body::after {
   left: 0;
   transition: all .3s
 }
+.page__theme {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  cursor: pointer
+}
+.page__action {
+  position: relative
+}
+html.dark body {
+  color: #fff;
+  background-color: #0b0e17
+}
+html.light body {
+  background-color: #d6d3d3;
+  color: #333
+}
+html.light body .popup__content {
+  background-color: #d6d3d3;
+  color: #333
+}
+html.light body .title-section h3 {
+  color: #8d652a
+}
+html.light body .popup__close svg {
+  fill: #8d652a
+}
+html.dark .page__theme {
+  background: url(../img/sun.svg) 0 0/100% no-repeat
+}
+html.light .page__theme {
+  background: url(../img/moon.svg) 0 0/100% no-repeat
+}
 @media (min-width:91.875em) {
   .header {
     padding-top: 3.75rem
@@ -404,10 +436,6 @@ body::after {
     align-self: flex-start;
     justify-content: space-around;
     width: 100%
-  }
-  .project__title-block {
-    flex-direction: column;
-    align-items: flex-start
   }
   .project__body-cards {
     grid-template-columns: auto
@@ -512,5 +540,11 @@ body::after {
     background: rgba(11,14,23,.827);
     color: #ffc978;
     bottom: 0
+  }
+  html.light body .menu__link:hover {
+    color: #8d652a
+  }
+  html.light body .popup__social-links a:hover {
+    color: #8d652a
   }
 }
