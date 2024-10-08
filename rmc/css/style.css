@@ -117,7 +117,7 @@ h6 {
   align-items: center;
   gap: .9375rem;
   position: relative;
-  z-index: 50
+  z-index: 150
 }
 .menu__list {
   display: flex;
@@ -281,10 +281,8 @@ body::after {
 .header._header-scroll {
   position: fixed;
   top: -100%;
-  background: rgba(11,14,23,.37);
-  box-shadow: 0 4px 30px rgba(0,0,0,.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px)
+  background: rgba(11,14,23,.8);
+  box-shadow: 0 4px 30px rgba(0,0,0,.1)
 }
 .header._header-show {
   transition: top .8s ease 0s;
@@ -299,7 +297,7 @@ body::after {
 }
 .header__logo {
   position: relative;
-  z-index: 55;
+  z-index: 250;
   color: #fff;
   font-family: Lora,sans-serif;
   font-weight: 500
@@ -1178,7 +1176,7 @@ body::after {
     top: 0;
     border-bottom: 1px solid #2e313a;
     transition: right .3s;
-    z-index: 2;
+    z-index: 152;
     background-color: #0b0e17
   }
   .menu-open .menu__body {
